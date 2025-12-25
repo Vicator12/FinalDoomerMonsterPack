@@ -302,7 +302,7 @@ class PlayerClassCheckHandler : EventHandler
 				{
 					if(e.Replacee == 'ZombieMan')
 					{
-						e.Replacement = 'PLUTZombieMan';
+						e.Replacement = 'HellBoundZombieMan';
 					}
 					
 					if(e.Replacee == 'ShotgunGuy')
@@ -369,4 +369,5 @@ class PlayerClassCheckHandler : EventHandler
 	}
 
 }
+
 

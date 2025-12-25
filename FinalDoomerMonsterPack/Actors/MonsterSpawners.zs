@@ -1,5 +1,6 @@
 class PlayerClassCount : EventHandler
 {
+	// Global Vars
 	int PLUTPlayerCount;
 	int TNTPlayerCount;
 	int AAPlayerCount;
@@ -15,7 +16,8 @@ class PlayerClassCheckHandler : EventHandler
 {
 	
 	PlayerClassCount event;
-	
+
+	// Function for checking whether the given weaponset is used by most players.
 	bool CheckPlayerClassCount(int ClassCount)
 	{
 		event = PlayerClassCount(EventHandler.Find("PlayerClassCount"));
@@ -35,6 +37,7 @@ class PlayerClassCheckHandler : EventHandler
 		event = PlayerClassCount(EventHandler.Find("PlayerClassCount"));
         if (event)
 		{
+			// increments the player count of players using specific weaponset
 			if(players[e.PlayerNumber].mo is 'FDPlutPlayer')
 			{
 				event.PLUTPlayerCount += 1;
@@ -87,8 +90,10 @@ class PlayerClassCheckHandler : EventHandler
 		event = PlayerClassCount(EventHandler.Find("PlayerClassCount"));
         if (event)
 		{
+			// Vanilla stays vanilla, so if it is vanilla, keep it as it is
 			if(!(CheckPlayerClassCount(event.DOOMPlayerCount)))
 			{
+				// Monster replacer code for TNT
 				if(CheckPlayerClassCount(event.TNTPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -121,7 +126,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'TNTSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Plutonia
 				if(CheckPlayerClassCount(event.PLUTPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -154,7 +160,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'PLUTSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Ancient Aliens
 				if(CheckPlayerClassCount(event.AAPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -187,7 +194,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'AliensSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Alien Vendetta
 				if(CheckPlayerClassCount(event.AVPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -220,7 +228,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'AlienVendettaSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Back To Saturn X
 				if(CheckPlayerClassCount(event.BTSXPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -253,7 +262,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'BTSXSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for JaPanese Community Project
 				if(CheckPlayerClassCount(event.JPCPPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -286,7 +296,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'JPCPSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Hellbound
 				if(CheckPlayerClassCount(event.HELLPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -319,7 +330,8 @@ class PlayerClassCheckHandler : EventHandler
 						e.Replacement = 'HellBoundSpiderMastermind';
 					}
 				}
-				
+
+				// Monster replacer code for Whitemare
 				if(CheckPlayerClassCount(event.WMPlayerCount))
 				{
 					if(e.Replacee == 'ZombieMan')
@@ -355,4 +367,5 @@ class PlayerClassCheckHandler : EventHandler
 			}
 		}
 	}
+
 }

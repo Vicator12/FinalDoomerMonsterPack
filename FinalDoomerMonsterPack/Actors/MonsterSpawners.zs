@@ -369,3 +369,4 @@ class PlayerClassCheckHandler : EventHandler
 	}
 
 }
+

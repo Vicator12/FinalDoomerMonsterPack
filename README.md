@@ -23,5 +23,5 @@ You will be mentioned in the credits if you contributed to the addon, such as ad
 - Playtest the addon
 - Fix the laser/rail attacks of AV and TNT Arachnotron
 - Balance the monsters if they are way too hard during playtesting
-- Nerf the Whitemare burning effect (probably by removing the burn effect when the player is healed, but I haven't found a way to implement that. Need suggestions)
+- Nerf the Whitemare burning effect (probably by removing the burn effect when the player is healed)
 - Implement the rage mechanism of the cyberbosses in a way that is fair and does not softlock the player in maps with tight corridors and enclosed spaces (rage mechanism will be toggleable in the menu. Rage mechanism may not be in the final release!)

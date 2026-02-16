@@ -1,4 +1,4 @@
 Tracer model, sprite and code taken from Brutal Wolfenstein 3D by ZioMcCall
 
 Project contributions from:
-Kan3
+Kan3 (https://www.doomworld.com/forum/topic/157266-monster-replacement-code-does-not-function-in-certain-maps-not-solved/?do=findComment&comment=3005971)

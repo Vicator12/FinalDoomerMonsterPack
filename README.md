@@ -13,7 +13,7 @@ This addon needs new sprites for the new monsters. You can send your sprites mad
 - It must not create confusion as to what the monster actually is (i.e., humanoid flame trooper sprites for the Whitemare Arachnotron, which would make the player think it is a chaingunner/shotgunner instead of an arachnotron)
 - If you are basing the sprites on existing sprites(does not include stock sprites), create a credits text file and mention the creator(s) behind the sprites you based your sprites on
 
-Note: HellBound Zombieman must wield only one revolver and not the same revolver the player uses. It could wield the Plutonia revolver if you want.
+Note: HellBound Zombieman must wield only one revolver and not the same revolver the player uses in the Hellbound weaponset. It could wield the Plutonia revolver if you want.
 
 You will be mentioned in the credits if you contributed to the addon, such as adding sprites, reporting bugs, providing bug fixes/changes or providing critical feedback on the addon.
 
@@ -25,3 +25,6 @@ You will be mentioned in the credits if you contributed to the addon, such as ad
 - Balance the monsters if they are way too hard during playtesting
 - Nerf the Whitemare burning effect (probably by removing the burn effect when the player is healed)
 - Implement the rage mechanism of the cyberbosses in a way that is fair and does not softlock the player in maps with tight corridors and enclosed spaces (rage mechanism will be toggleable in the menu. Rage mechanism may not be in the final release!)
+
+
+note: "h" commits have REALLY small changes, which is why the title isn't descriptive and is only "h"

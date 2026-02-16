@@ -31,11 +31,6 @@ class PlayerClassCheckHandler : EventHandler
 		}
 		return false;
 	}
-	
-	bool IsVoodooDoll(PlayerPawn mo) 
-	{
-		return !mo.player || !mo.player.mo || mo.player.mo != mo;
-	}
 
 	override void PlayerSpawned (PlayerEvent e)
 	{

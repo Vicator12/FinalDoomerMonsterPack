@@ -68,6 +68,11 @@ actor CyberWMMissile : FDWhitemareFiregraspProjectile
 
 actor ----2------ArachnotronPlasma----2---- {}
 
+actor PLUTPlasmaTracerPuff : FDGibBulletPuff
+{
+	Species ""
+}
+
 actor BSpidTNTMissile : FDTNTSimpleMaserBeam
 {
 	species ""

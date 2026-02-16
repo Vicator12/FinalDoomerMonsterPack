@@ -18,7 +18,8 @@ class PlutArachnotron : Arachnotron
 		Goto See+1;
 	Missile:
 		BSPI A 20 BRIGHT A_FaceTarget;
-		BSPI G 2 BRIGHT A_CustomBulletAttack(1.2, 0.7, 1, 2*random(2,8), "FDGibBulletPuff", flags:FBF_NORANDOM);
+		//BSPI G 2 BRIGHT A_CustomBulletAttack(1.2, 0.7, 1, 2*random(2,8), "FDGibBulletPuff", flags:FBF_NORANDOM);
+		BSPI G 2 BRIGHT A_SpawnProjectile("PLUTPlasmaTracer", 32, angle:random2(1.2), flags:CMF_OFFSETPITCH, pitch:random2(0.7));
 		BSPI H 2 BRIGHT;
 		BSPI H 1 BRIGHT A_SpidRefire;
 		Goto Missile+1;
@@ -38,5 +39,39 @@ class PlutArachnotron : Arachnotron
 		BSPI P 5;
 		BSPI ONMLKJ 5;
 		Goto See+1;
+	}
+}	
+
+Class PLUTPlasmaTracer : Fastprojectile
+{
+	Default
+	{
+		+BLOODSPLATTER 
+		+THRUGHOST
+		+RANDOMIZE
+		+FORCEXYBILLBOARD
+		+NOEXTREMEDEATH
+		speed 35;
+		FastSpeed 35;
+		radius 2;
+		height 2;
+		renderstyle "ADD";
+		alpha 0.9;
+		scale .50;
+		DamageFunction 2*random(2,8);
+		Projectile;
+		Decal "BulletChip";
+	}
+	States
+	{
+	Spawn:
+		TRAC A 1 BRIGHT;
+		Loop;
+	Death:
+		TNT1 A 1 A_SpawnItem("PLUTPlasmaTracerPuff");
+		Stop;
+	XDeath:
+		TNT1 A 0;
+		Stop;
 	}
 }

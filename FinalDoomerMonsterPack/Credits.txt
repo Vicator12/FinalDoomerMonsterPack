@@ -1,0 +1,1 @@
+Tracer model, sprite and code taken from Brutal Wolfenstein 3D

@@ -101,6 +101,7 @@ class PlayerClassCheckHandler : EventHandler
 			
 		if(e.Replacee == "ChaingunGuy")
 		{
+			console.printf(WeaponsetType.."ChaingunGuy");
 			e.Replacement = WeaponsetType.."ChaingunGuy";
 		}
 		
@@ -142,7 +143,7 @@ class PlayerClassCheckHandler : EventHandler
 			else if(CheckPlayerClassCount(event.PLUTPlayerCount))
 			{
 				MonsterReplacer("PLUT", e);
-				console.printf("True");
+				//console.printf("True");
 			}
 
 			// Monster replacer code for Ancient Aliens

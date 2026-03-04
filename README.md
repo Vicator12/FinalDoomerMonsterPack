@@ -7,7 +7,7 @@ This addon needs feedback on whether the multiplayer-based monster spawner works
 
 This addon needs new sprites for the new monsters. You can send your sprites made for this addon to this link:[PLACEHOLDER]. The rules for making the sprites are as follows:
 - Sprites must be in a .WAD/.PK3 file
-- It must not be AI-generated
+- It must NOT be AI-generated
 - It must match the style of the weaponset and the PWAD the weaponset is based on
 - It should resemble the stock monster
 - It must not create confusion as to what the monster actually is (i.e., humanoid flame trooper sprites for the Whitemare Arachnotron, which would make the player think it is a chaingunner/shotgunner instead of an arachnotron)

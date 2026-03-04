@@ -83,7 +83,7 @@ class PlayerClassCheckHandler : EventHandler
 			{
 				event.DOOMPlayerCount += 1;
 			}
-			//console.printf(string.format(event.DOOMPlayerCount));
+			console.printf("%d", event.PLUTPlayerCount);
 		}
 	}
 	

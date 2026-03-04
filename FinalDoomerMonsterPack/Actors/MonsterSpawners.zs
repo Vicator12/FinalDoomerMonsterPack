@@ -128,11 +128,13 @@ class PlayerClassCheckHandler : EventHandler
 			//Vanilla stays vanilla, so if it is vanilla, return
 			if(CheckPlayerClassCount(event.DOOMPlayerCount))
 			{
+				console.printf("False");
 				return;
 			}
 			// Monster replacer code for TNT
 			else if(CheckPlayerClassCount(event.TNTPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("TNT", e);
 			}
 			
@@ -140,41 +142,48 @@ class PlayerClassCheckHandler : EventHandler
 			else if(CheckPlayerClassCount(event.PLUTPlayerCount))
 			{
 				MonsterReplacer("PLUT", e);
+				console.printf("True");
 			}
 
 			// Monster replacer code for Ancient Aliens
 			else if(CheckPlayerClassCount(event.AAPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("Aliens", e);
 			}
 			
 			// Monster replacer code for Alien Vendetta
 			else if(CheckPlayerClassCount(event.AVPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("AlienVendetta", e);
 			}
 
 			// Monster replacer code for Back To Saturn X
 			else if(CheckPlayerClassCount(event.BTSXPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("BTSX", e);
 			}
 
 			// Monster replacer code for JaPanese Community Project
 			else if(CheckPlayerClassCount(event.JPCPPlayerCount))
 			{	
+				console.printf("False");
 				MonsterReplacer("JPCP", e);
 			}
 
 			// Monster replacer code for Hellbound
 			else if(CheckPlayerClassCount(event.HELLPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("HellBound", e);
 			}
 
 			// Monster replacer code for Whitemare
 			else if(CheckPlayerClassCount(event.WMPlayerCount))
 			{
+				console.printf("False");
 				MonsterReplacer("Whitemare", e);
 			}
 		}
